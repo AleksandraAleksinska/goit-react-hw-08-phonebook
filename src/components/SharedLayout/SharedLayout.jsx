@@ -6,12 +6,12 @@ import { AppHeader } from 'components/AppHeader/AppHeader';
 
 const SharedLayout = ({children}) => {
     return (
-      <header >
+      <div>
         <AppHeader />
         <Suspense fallback={null}>
           <Outlet />
         </Suspense>
-      </header>
+      </div>
     )
   }
   

@@ -4,8 +4,6 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { addContact, fetchContacts } from 'redux/contacts/operations';
 import { selectContacts } from 'redux/contacts/selectors';
-import SearchingFilter from 'components/SearchingFilter/SearchingFilter';
-import ContactList from 'components/ContactList/ContactList';
 import { selectError, selectIsLoading } from 'redux/contacts/selectors';
 
 
@@ -27,8 +25,8 @@ const ContactForm = () => {
       } 
       else {
         const name = form.elements.name.value;
-        const phone = form.elements.number.value;
-      dispatch(addContact({ name, phone }))       
+        const number = form.elements.number.value;
+      dispatch(addContact({ name, number }))       
       }
     form.reset();
   }
@@ -63,8 +61,6 @@ const ContactForm = () => {
          <button className={css.formButton}type='submit'>Add contact</button>
        </form>
        {isLoading && !error && <b>Request in progress...</b>}
-       <SearchingFilter />
-       <ContactList />
        </Fragment>
   )
 }
