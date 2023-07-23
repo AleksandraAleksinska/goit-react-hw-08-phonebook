@@ -19,7 +19,7 @@ export const register = createAsyncThunk(
 
       return response.data;
     } catch (error) {
-      return thunkApi.rejectWithValue(window.alert(`Ooops, something went wrong... Your email is already registered or your password does not contain at least one number and one letter (at least 7 characters)`));
+      return thunkApi.rejectWithValue(window.alert(`Ooops, something went wrong... Your email is already registered or your password does not contain at least 7 characters`));
     }
   }
 );
