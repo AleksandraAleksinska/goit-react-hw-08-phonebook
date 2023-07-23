@@ -1,0 +1,13 @@
+.contacts{
+    height: 100vh;
+    padding-top: 60px;
+    padding-left: 40px;
+    /* /* 
+  * Created with https://www.css-gradient.com
+  * Gradient link: https://www.css-gradient.com/?c1=ffffff&c2=fff4eb&gt=r&gd=dtt
+  */
+  background: #FFFFFF;
+  background: radial-gradient(at center top, #FFFFFF, #FFF4EB);
+  
+  
+  }

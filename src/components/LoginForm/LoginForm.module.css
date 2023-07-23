@@ -1,11 +1,42 @@
+.formBox{
+  height: 100vh;
+  padding-top: 60px;
+  padding-left: 40px;
+  /* /* 
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=ffffff&c2=fff4eb&gt=r&gd=dtt
+*/
+background: #FFFFFF;
+background: radial-gradient(at center top, #FFFFFF, #FFF4EB);
+
+
+}
 .form {
     width: 320px;
-    margin-left: 20px;
-    margin-top: 40px;
+
   }
   
   .label {
     display: flex;
     flex-direction: column;
+    gap:4px;
     margin-bottom: 16px;
+    color: rgb(219, 95, 0);
+    text-transform: uppercase;
+    font-weight: bold;
   }
+
+  .formButton {
+    margin-top: 10px;
+    border-radius: 5px;
+    border-color: aliceblue;
+    padding-block: 7px;
+    padding-inline: 18px;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: rgb(219, 95, 0);
+        color:white;
+    }
+
+}

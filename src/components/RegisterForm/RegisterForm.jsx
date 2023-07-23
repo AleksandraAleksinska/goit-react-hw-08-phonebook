@@ -19,7 +19,8 @@ export const RegisterForm = () => {
   };
 
   return (
-    <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
+    <div className={css.formBox}>
+      <form className={css.form} onSubmit={handleSubmit} autoComplete="off">
       <label className={css.label}>
         Username
         <input type="text" name="name" />
@@ -32,7 +33,9 @@ export const RegisterForm = () => {
         Password
         <input type="password" name="password" />
       </label>
-      <button type="submit">Register</button>
+      <button className={css.formButton} type="submit">Register</button>
     </form>
+    </div>
+    
   );
 };

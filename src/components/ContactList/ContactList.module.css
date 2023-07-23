@@ -7,7 +7,7 @@
     cursor: pointer;
     
     &:hover{
-        background-color: orange;
+        background-color: rgb(219, 95, 0);
         color:white;
     }
 }

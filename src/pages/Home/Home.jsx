@@ -1,8 +1,12 @@
-import React, { Fragment } from 'react'
+import css from './Home.module.css'
 
 const Home = () => {
   return (
-    <Fragment><h1>Welcome to PHONEBOOK application!</h1></Fragment>
+    <div className={css.home}>
+      <h1>Welcome to <span className={css.phonebook}>PHONEBOOK</span> application!</h1>
+      <span>Please, <b>LOG IN</b></span>
+      <span>or <b>REGISTER </b>yourself and  join us!</span>
+    </div>
   )
 }
 

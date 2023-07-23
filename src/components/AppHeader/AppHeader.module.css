@@ -1,12 +1,14 @@
 .header {
-  background-color: rgb(228, 228, 228);
+  position: relative;
+  z-index: 999;
+  background-color:white;
   height: 60px;
-  margin-bottom: 25px;
   display: flex;
   justify-content:space-between;
   gap: 15px;
-  align-items: center;
-  padding-inline: 20px;
+  align-items: baseline;
+  padding-inline: 25px;
+  padding-top: 10px;
   box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
   -webkit-box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);
   -moz-box-shadow: 0px 10px 12px -1px rgba(0,0,0,0.75);

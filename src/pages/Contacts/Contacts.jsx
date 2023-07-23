@@ -1,16 +1,16 @@
 import ContactForm from 'components/ContactForm/ContactForm';
 import ContactList from 'components/ContactList/ContactList';
 import SearchingFilter from 'components/SearchingFilter/SearchingFilter';
-import { Fragment } from 'react';
+import css from './Contacts.module.css';
 import React from 'react';
 
 const Contacts = () => {
   return (
-    <Fragment>
+    <div className={css.contacts}>
         <ContactForm/>
         <SearchingFilter/>
         <ContactList />
-    </Fragment>
+    </div>
   )
 }
 
