@@ -2,18 +2,27 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    color: white;
+    font-size: 26px;
     margin: 0 auto;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-image: linear-gradient(
+      rgba(255, 255, 255, 0.8),
+      rgba(0, 0, 0, 0.8)
+    ),
+    url(images/address-book.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
 /* /* 
 * Created with https://www.css-gradient.com
 * Gradient link: https://www.css-gradient.com/?c1=ffffff&c2=fff4eb&gt=r&gd=dtt
 */
-background: #FFFFFF;
-background: radial-gradient(at center top, #FFFFFF, #FFF4EB);
+/* background: #FFFFFF;
+background: radial-gradient(at center top, #FFFFFF, #FFF4EB); */
 } 
 
 .phonebook{
-    color:rgb(255, 153, 0);
+    color:rgb(255, 149, 0);
 }
